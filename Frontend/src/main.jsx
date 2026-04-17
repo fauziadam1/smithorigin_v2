@@ -4,12 +4,15 @@ import "./index.css";
 import App from "./App.jsx";
 import { BrowserRouter } from "react-router";
 import { Header } from "./components/header";
+import { ThemeProvider } from "./components/theme-provider";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <BrowserRouter>
-      <Header />
-      <App />
+      <ThemeProvider defaultTheme="light" storageKey="vite-ui-theme">
+        <Header />
+        <App />
+      </ThemeProvider>
     </BrowserRouter>
   </StrictMode>,
 );

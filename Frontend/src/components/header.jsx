@@ -1,31 +1,52 @@
-import { Home, HomeIcon, Newspaper, Users2Icon } from "lucide-react";
+import { Search } from "lucide-react";
 import { Link } from "react-router";
-import { Button } from "./ui/button";
+import Logo from "./svgs/logo";
+import { Separator } from "./ui/separator";
+import { ModeToggle } from "./mode-toggle";
+import { SocialMedia } from "./link-social-media";
+import { InputGroup, InputGroupAddon, InputGroupInput } from "./ui/input-group";
 
 export function Header() {
   return (
-    <div className="w-full border-b flex items-center justify-between py-4 px-5 fixed">
+    <div className="w-full border-b flex items-center justify-between py-3.5 px-30 fixed z-50 bg-background">
       <Link to={"/"} className="flex items-center gap-2">
-        <img src="/logo.png" alt="smithorigin" className="w-7" />
-        <h1 className="font-semibold tracking-[1px]">Smith Origin</h1>
+        <Logo className="size-7 text-[#930819]" />
+        <h1 className="font-bold text-[18px]">Smith Origin</h1>
       </Link>
-      <div className="flex items-center gap-5">
-        <Link to={"/"} className="inline-flex font-medium">
-          <Button variant="ghost">Home</Button>
-        </Link>
-        <Link to={"/blog"} className="inline-flex font-medium">
-          <Button variant="ghost">Blog</Button>
-        </Link>
-        <Link to={"/about"} className="inline-flex font-medium">
-          <Button variant="ghost">About Us</Button>
-        </Link>
-      </div>
-      <div>
-        <Link to={'/'}>
-          <Button size="icon" variant="ghost">
-            <Home />
-          </Button>
-        </Link>
+      <div className="flex items-center gap-4">
+        <div className="flex items-center gap-5">
+          <Link
+            to={"/"}
+            className="inline-flex text-muted-foreground text-sm hover:text-foreground dark:hover:text-foreground"
+          >
+            Home
+          </Link>
+          <Link
+            to={"/"}
+            className="inline-flex text-muted-foreground text-sm hover:text-foreground dark:hover:text-foreground"
+          >
+            Product
+          </Link>
+          <Link
+            to={"/"}
+            className="inline-flex text-muted-foreground text-sm hover:text-foreground dark:hover:text-foreground"
+          >
+            Blog
+          </Link>
+        </div>
+        <Separator orientation="vertical" />
+        <div className="flex items-center gap-3">
+          <InputGroup className="min-w-sm">
+            <InputGroupInput placeholder="Search..." />
+            <InputGroupAddon>
+              <Search />
+            </InputGroupAddon>
+            <InputGroupAddon align="inline-end">12 results</InputGroupAddon>
+          </InputGroup>
+          <ModeToggle />
+        </div>
+        <Separator orientation="vertical" />
+        <SocialMedia />
       </div>
     </div>
   );
