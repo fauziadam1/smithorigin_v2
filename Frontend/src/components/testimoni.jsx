@@ -72,7 +72,7 @@ export default function Testimoni() {
             <div className="flex flex-col items-center gap-2 px-20 py-5">
               <p className="text-sm text-muted-foreground">RATING</p>
               <h1 className="font-bold text-4xl">4.9/5</h1>
-              <p className="text-muted-foreground text-sm">7,417 customers</p>
+              <p className="text-muted-foreground text-sm">7,417 reviewers</p>
             </div>
           </CardContent>
         </Card>

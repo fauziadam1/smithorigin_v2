@@ -34,13 +34,13 @@ export function Header() {
         </div>
         <Separator orientation="vertical" />
         <div className="flex items-center gap-3">
-          <InputGroup className="min-w-sm">
+          {/* <InputGroup className="min-w-sm">
             <InputGroupInput placeholder="Search..." />
             <InputGroupAddon>
               <Search />
             </InputGroupAddon>
             <InputGroupAddon align="inline-end">12 results</InputGroupAddon>
-          </InputGroup>
+          </InputGroup> */}
           <ModeToggle />
         </div>
         <Separator orientation="vertical" />

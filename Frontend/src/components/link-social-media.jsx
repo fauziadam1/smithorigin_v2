@@ -7,19 +7,19 @@ export function SocialMedia() {
   return (
     <div className="inline-flex items-center gap-2">
       <Link
-        to={"/"}
+        to={"https://www.instagram.com/smithorigin.id/"}
         className="text-muted-foreground hover:text-foreground dark:hover:text-foreground"
       >
         <Instagram className="size-6" />
       </Link>
       <Link
-        to={"/"}
+        to={"https://www.tiktok.com/@smithorigin"}
         className="text-muted-foreground hover:text-foreground dark:hover:text-foreground"
       >
         <Tiktok className="size-5" />
       </Link>
       <Link
-        to={"/"}
+        to={"https://www.youtube.com/@smithorigin"}
         className="text-muted-foreground hover:text-foreground dark:hover:text-foreground"
       >
         <Youtube className="size-6" />

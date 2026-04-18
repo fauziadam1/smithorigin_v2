@@ -49,34 +49,34 @@ export function Footer() {
         </span>
         <span className="flex flex-col gap-2">
           <h1 className="font-semibold text-lg">Social Media</h1>
-          <Link to={'/'}>
+          <Link to={'https://www.tiktok.com/@smithorigin'}>
             <Button variant="link" className="p-0 text-muted-foreground text-lg font-normal">Tiktok</Button>
           </Link>
-          <Link to={'/'}>
+          <Link to={'https://www.instagram.com/smithorigin.id/'}>
             <Button variant="link" className="p-0 text-muted-foreground text-lg font-normal">Instagram</Button>
           </Link>
-          <Link to={'/'}>
+          <Link to={'https://www.youtube.com/@smithorigin'}>
             <Button variant="link" className="p-0 text-muted-foreground text-lg font-normal">Youtube</Button>
           </Link>
         </span>
         <span className="flex flex-col gap-2">
           <h1 className="font-semibold text-lg">Marketplace</h1>
-          <Link to={'/'}>
+          <Link to={'https://www.tokopedia.com/smithorigin'}>
             <Button variant="link" className="p-0 text-muted-foreground text-lg font-normal">Tokopedia</Button>
           </Link>
-          <Link to={'/'}>
+          <Link to={'https://shopee.co.id/smithorigin'}>
             <Button variant="link" className="p-0 text-muted-foreground text-lg font-normal">Shopee</Button>
           </Link>
         </span>
         <span className="flex flex-col gap-2">
           <h1 className="font-semibold text-lg">Community</h1>
-          <Link to={'/'}>
+          <Link to={'https://discord.gg/ME4EeXzr'}>
             <Button variant="link" className="p-0 text-muted-foreground text-lg font-normal">Discord</Button>
           </Link>
         </span>
       </div>
       <div className="border-t-2 border-dashed flex items-center justify-between w-full px-30 py-5">
-        <h1 className="text-muted-foreground text-lg">
+        <h1 className="text-muted-foreground">
           © 2026{" "}
           <span className="font-medium text-foreground">Smith Origin</span>. All
           rights reserved.

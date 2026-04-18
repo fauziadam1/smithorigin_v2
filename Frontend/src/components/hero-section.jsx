@@ -26,7 +26,7 @@ export default function Hero() {
           </Link>
           <ButtonGroup>
             <Button size="lg" variant="outline">
-              <Link to={"/"} className="inline-flex items-center gap-1.5">
+              <Link to={"https://www.tokopedia.com/smithorigin"} className="inline-flex items-center gap-1.5">
                 <img
                   src="/Tokopedia_Mascot.png"
                   alt="Tokopedia"
@@ -36,7 +36,7 @@ export default function Hero() {
               </Link>
             </Button>
             <Button size="lg" variant="outline">
-              <Link to={"/"} className="inline-flex items-center gap-1.5">
+              <Link to={"https://shopee.co.id/smithorigin"} className="inline-flex items-center gap-1.5">
                 <Shopee className="size-4" />
                 <p className="mt-1">Shopee</p>
               </Link>
