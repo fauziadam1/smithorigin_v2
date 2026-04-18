@@ -5,13 +5,18 @@ import App from "./App.jsx";
 import { BrowserRouter } from "react-router";
 import { Header } from "./components/header";
 import { ThemeProvider } from "./components/theme-provider";
+import { Footer } from "./components/footer";
+import { TooltipProvider } from "./components/ui/tooltip";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <BrowserRouter>
       <ThemeProvider defaultTheme="light" storageKey="vite-ui-theme">
-        <Header />
-        <App />
+        <TooltipProvider>
+          <Header />
+          <App />
+          <Footer />
+        </TooltipProvider>
       </ThemeProvider>
     </BrowserRouter>
   </StrictMode>,
