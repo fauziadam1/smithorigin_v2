@@ -12,16 +12,16 @@ export default function Hero() {
           <span className="w-1 h-1 bg-primary rounded-full mr-1" /> Smith Origin{" "}
           <span className="text-muted-foreground">- Gaming Gear Store</span>
         </Badge>
-        <h1 className="font-bold text-7xl max-w-4xl text-center">
+        <h1 className="font-bold text-5xl sm:text-[4rem] lg:text-7xl max-w-3xl lg:max-w-4xl text-center">
           The gaming gear store you are looking for
         </h1>
-        <p className="text-muted-foreground text-xl max-w-3xl text-center">
+        <p className="text-muted-foreground text-sm sm:text-lg lg:text-xl max-w-2xl lg:max-w-3xl text-center">
           Rasakan performa tanpa batas dengan gaming gear pilihan dari Smith
           Origin. Dirancang untuk presisi, kecepatan, dan kenyamanan
           maksimal—karena setiap detail menentukan kemenangan.
         </p>
         <div className="inline-flex items-center gap-3">
-          <Link to={"/"}>
+          <Link to={"/store"}>
             <Button size="lg">View Product</Button>
           </Link>
           <ButtonGroup>

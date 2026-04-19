@@ -10,14 +10,14 @@ import { Card, CardContent } from "./ui/card";
 export default function Testimoni() {
   return (
     <div className="flex flex-col items-center gap-12 border-t-2 border-dashed border-b-2 w-full bg-background py-10">
-      <div className="text-center space-y-2">
+      <div className="flex flex-col items-center text-center space-y-2 px-10">
         <h1 className="text-muted-foreground -tracking-tighter text-sm">
           OUR RATING STORE
         </h1>
-        <h1 className="font-bold text-4xl">
+        <h1 className="font-bold text-3xl sm:text-4xl">
           Start shopping at <span className="text-primary">smithorigin.</span>
         </h1>
-        <p className="text-muted-foreground text-xl max-w-xl">
+        <p className="text-muted-foreground text-lg sm:text-xl max-w-xl">
           Join thousands of engineers who traded fighting their tools for
           shipping features.
         </p>
@@ -66,7 +66,7 @@ export default function Testimoni() {
           ))}
         </div>
       </div>
-      <div className="flex items-center gap-3">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
         <Card>
           <CardContent>
             <div className="flex flex-col items-center gap-2 px-20 py-5">

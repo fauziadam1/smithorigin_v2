@@ -44,7 +44,7 @@ export function CarouselBanner() {
         <CarouselContent className="rounded-2xl">
           {Array.from({ length: 5 }).map((_, index) => (
             <CarouselItem key={index} className="rounded-2xl">
-              <div className="p-2 rounded-2xl">
+              <div className="rounded-2xl">
                 <Card className="shadow-none p-0">
                   <CardContent className="flex aspect-video items-center justify-center p-0">
                     <img
@@ -60,8 +60,8 @@ export function CarouselBanner() {
         </CarouselContent>
         {/* <CarouselPrevious className=" opacity-0 group-hover:opacity-100 transition-opacity duration-200 size-10" />
         <CarouselNext className=" opacity-0 group-hover:opacity-100 transition-opacity duration-200 size-10" /> */}
-        <CarouselPrevious className="size-10" />
-        <CarouselNext className="size-10" />
+        <CarouselPrevious className="size-10" size="lg"/>
+        <CarouselNext className="size-10" size="lg"/>
       </Carousel>
       <div className="flex justify-center gap-2 mt-4">
         {Array.from({ length: count }).map((_, i) => (

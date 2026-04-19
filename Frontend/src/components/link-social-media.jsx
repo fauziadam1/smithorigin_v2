@@ -10,19 +10,19 @@ export function SocialMedia() {
         to={"https://www.instagram.com/smithorigin.id/"}
         className="text-muted-foreground hover:text-foreground dark:hover:text-foreground"
       >
-        <Instagram className="size-6" />
+        <Instagram className="size-5.5" />
       </Link>
       <Link
         to={"https://www.tiktok.com/@smithorigin"}
         className="text-muted-foreground hover:text-foreground dark:hover:text-foreground"
       >
-        <Tiktok className="size-5" />
+        <Tiktok className="size-4.5" />
       </Link>
       <Link
         to={"https://www.youtube.com/@smithorigin"}
         className="text-muted-foreground hover:text-foreground dark:hover:text-foreground"
       >
-        <Youtube className="size-6" />
+        <Youtube className="size-5" />
       </Link>
     </div>
   );

@@ -8,13 +8,17 @@ export default function Home() {
   return (
     <div className="w-full min-h-screen">
       <div className="w-full flex flex-col items-center justify-center space-y-30">
-        <Hero />
+        <div className="px-10 lg:px-30">
+          <Hero />
+        </div>
         <ImageTicker />
-        <Testimoni />
-        <div className="px-30">
+        <div className="lg:px-30">
           <CarouselBanner />
         </div>
-        <Post />
+        <Testimoni />
+        <div className="w-full px-10 lg:px-30">
+          <Post />
+        </div>
       </div>
     </div>
   );
